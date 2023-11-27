@@ -12,6 +12,11 @@ import Cart from "./Components/Cart";
 import AllUser from "./Components/AllUser";
 import CreateShop from "./Components/CreateShop";
 import WatchDemo from "./Components/WatchDemo";
+import ManagerHome from "./Components/ManagerHome";
+import AllUserForManager from "./Components/AllUserForManager";
+import ListForm from "./Components/ListForm";
+import ManageProduct from "./Components/ManageProduct";
+import List from "./Components/List";
 
   
   export const router = createBrowserRouter([
@@ -42,6 +47,10 @@ import WatchDemo from "./Components/WatchDemo";
         {
           path:'/watchDemo',
           element:<WatchDemo></WatchDemo>
+        },
+        {
+          path:'/list',
+          element:<List></List>
         }
       ]
     },
@@ -54,8 +63,24 @@ import WatchDemo from "./Components/WatchDemo";
           element: <Cart></Cart>
         },
         {
+        path:'managerHome',
+        element:<ManagerHome></ManagerHome>
+        },
+        {
           path: "allUsers",
           element: <AllUser></AllUser>
+        },
+        {
+          path:"allUserForManager",
+          element:<AllUserForManager></AllUserForManager>
+        },
+        {
+          path:"listform",
+          element:<ListForm></ListForm>
+        },
+        {
+          path:"manageProduct",
+          element:<ManageProduct></ManageProduct>
         }
       ]
     }

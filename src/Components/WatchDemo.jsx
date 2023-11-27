@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet";
 
 
 const WatchDemo = () => {
     return (
         <div className="flex justify-around items-start">
+           <Helmet>
+                <title>Choco House | WatchDemo</title>
+            </Helmet>
             <div>
                 <img className="w-[500px] h-[1000px]" src="https://i.ibb.co/jzHY8KX/Brown-and-Black-Modern-Opening-Hour-Instagram-Story.png"></img>
             </div>

@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import UseAxiosSecure from "./useAxiosSecure";
 
 
-const AllUser = () => {
+const AllUserForManager = () => {
     const axiosSecure = UseAxiosSecure();
     const {data: users = [] , refetch} = useQuery({
         queryKey: ['users'],
@@ -16,8 +16,8 @@ const AllUser = () => {
     })
 
 
-    const handleMakeAdmin = user =>{
-        axiosSecure.patch(`/users/admin/${user._id}`)
+    const handleMakeManager = user =>{
+        axiosSecure.patch(`/users/manager/${user._id}`)
         .then(res => {
             console.log(res.data)
             if(res.data.modifiedCount > 0){
@@ -96,7 +96,7 @@ const AllUser = () => {
         </td>
         <th>
             {
-                user.role === 'admin' ? 'Admin' : <button onClick={() => handleMakeAdmin(user)} className="btn btn-ghost btn-lg bg-orange-400">
+                user.role === 'manager' ? 'Manager' : <button onClick={() => handleMakeManager(user)} className="btn btn-ghost btn-lg bg-orange-400">
                 <FaUser className="text-white " ></FaUser>
                 </button>
             }
@@ -120,4 +120,4 @@ const AllUser = () => {
     );
 };
 
-export default AllUser;
+export default AllUserForManager;

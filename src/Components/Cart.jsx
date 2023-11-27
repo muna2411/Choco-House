@@ -5,7 +5,7 @@ import UseAxiosSecure from "./useAxiosSecure";
 
 const Cart = () => {
     const [cart , refetch] = UseCart();
-    const totalPrice = cart.reduce( (total , item)=> total + item.price , 0);
+    const totalPrice = cart.reduce( (total , item)=> total + parseInt(item.price) , 0);
     const axiosSecure = UseAxiosSecure(); 
 
 const handleDelete = id =>{
@@ -49,7 +49,7 @@ const handleDelete = id =>{
     <thead>
       <tr className=" font-a text-[25px]">
         <th>
-         #
+         No.
         </th>
         <th>Image</th>
         <th>Name</th>
@@ -66,17 +66,17 @@ const handleDelete = id =>{
             <td>
               <div className="flex items-center gap-3">
                 <div className="avatar">
-                  <div className="mask mask-squircle w-12 h-12">
-                    <img src={item.image} alt="Avatar Tailwind CSS Component" />
+                  <div className=" w-[200px] h-[180px]">
+                    <img src={item.image}/>
                   </div>
                 </div>
                
               </div>
             </td>
-            <td>
+            <td className="text-[20px]">
             {item.name}
             </td>
-            <td>{item.price} $</td>
+            <td className="text-[20px]">{item.price} $</td>
             <th>
               <button onClick={() => handleDelete(item._id)} className="btn btn-ghost btn-lg">
                 <FaTrashAlt className="text-red-500"></FaTrashAlt>
@@ -84,8 +84,6 @@ const handleDelete = id =>{
             </th>
           </tr>)
     }
-      
-
 
     </tbody>
     

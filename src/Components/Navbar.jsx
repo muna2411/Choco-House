@@ -20,7 +20,7 @@ const handleLogOut = () => {
     const navOptions = <>
      <li ><Link to='/' >Home</Link></li>
      {/* <li><Link to='/menu' >Menu</Link></li> */}
-     <li><Link to='/order/Donut' >Order</Link></li>
+     <li><Link to='/order/Donut' >Items</Link></li>
      <li><Link to='/createShop'>Create Shop</Link></li>
      <li><Link to='/watchDemo'>Watch Demo</Link></li>
      
@@ -53,7 +53,7 @@ const handleLogOut = () => {
        {navOptions}
       </ul>
     </div>
-    <img className="h-[100px]" src="r13.png"></img>
+    <img className="h-[100px]" src="https://i.ibb.co/52x7MwJ/r13.png"></img>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-black text-[20px] font-semibold">

@@ -1,5 +1,5 @@
-import Cover from "./Cover";
-import orderImg from '../assets/pic/pexels-lisa-fotios-1129510.jpg'
+// import Cover from "./Cover";
+// import orderImg from '../assets/pic/pexels-lisa-fotios-1129510.jpg'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { useState } from "react";
@@ -24,13 +24,13 @@ const Order = () => {
     return (
         <div>
             <Helmet>
-                <title>Choco House | Item</title>
+                <title>Choco House | Items</title>
             </Helmet>
 
            {/* <Cover img = {orderImg} title = "OUR ORDER"></Cover> */}
            <Tabs defaultIndex={tabIndex} onSelect={(index) => setTabIndex(index)} className='flex justify-around items-start'>
              <TabList className='text-left mt-[50px] grid grid-cols-1 '>
-               <p className="text-[40px]  font-a text-[#411900]">Categories</p>
+               <p className="text-[40px]  font-a text-[#411900]">Categories Of Shop</p>
                <div className="divider bg-[#411900] h-[3px] w-[300px]"></div>
                 <Tab className='my-[20px] text-[25px] font-a'>Donut</Tab>
                 <Tab className='my-[20px] text-[25px] font-a'>Cup_Cakes</Tab>

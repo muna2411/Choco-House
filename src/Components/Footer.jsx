@@ -7,7 +7,7 @@ const Footer = () => {
         <div >
            <footer className="footer p-10 bg-[#CD7F32] text-neutral-content  h-[300px]">
              <aside>
-             <img className="h-[100px]" src="r13.png"></img>
+             <img className="h-[100px]" src="https://i.ibb.co/52x7MwJ/r13.png"></img>
                <p className="text-[22px]"><span className="font-a text-[#411900]">Choco House</span> Industries Ltd.</p>
                <p>Providing reliable tech since 1992</p>
             </aside> 
