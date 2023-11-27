@@ -2,45 +2,43 @@
 import Swal from "sweetalert2";
 import UseList from "./UseList";
 import UseAxiosSecure from "./useAxiosSecure";
-import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
+//import { useQuery } from "@tanstack/react-query";
 
 
 const ManageProduct = () => {
-    const [list] = UseList();
-    // const axiosSecure = UseAxiosSecure();
-    // const {data: user = [] , refetch} = useQuery({
-    //     queryKey: ['users'],
-    //     queryFn: async () => {
-    //         const res = await axiosSecure.get('/users')
-    //         return res.data;
-    //     }
-    // })
-    // const handleDelete = user =>{
-    //   Swal.fire({
-    //     title: "Are you sure?",
-    //     text: "You won't be able to revert this!",
-    //     icon: "warning",
-    //     showCancelButton: true,
-    //     confirmButtonColor: "#3085d6",
-    //     cancelButtonColor: "#d33",
-    //     confirmButtonText: "Yes, delete it!"
-    //   }).then((result) => {
-    //     if (result.isConfirmed) {
-    
-    //       axiosSecure.delete(`/users/${user._id}`)
-    //       .then(res =>{
-    //         if(res.data.deletedCount > 0){
-    //           refetch();
-    //            Swal.fire({
-    //            title: "Deleted!",
-    //            text: "Your file has been deleted.",
-    //            icon: "success"
-    //       });
-    //         }
-    //       })
-    //     }
-    //   });
-    // }
+    const [list, ,refetch] = UseList();
+//const [menu, , refetch] = useMenu();
+    const axiosSecure = UseAxiosSecure();
+
+    const handleDeleteItem = (item) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                const res = await axiosSecure.delete(`/list/${item._id}`);
+                 console.log(res.data);
+                if (res.data.deletedCount > 0) {     
+                    refetch();
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: `${item.productname} has been deleted`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+
+
+            }
+        });
+    }
 
 
     return (
@@ -92,14 +90,16 @@ const ManageProduct = () => {
 
             <th >
             {/* <button onClick={() => handleDelete(item)} className=" btn-ghost btn-lg"> */}
-              <button className=" btn-ghost btn-lg">
+              <button onClick={() => handleDeleteItem(item)} className=" btn-ghost btn-lg">
                 <p className="text-red-500">X</p>
               </button>
             </th>
             <th>
-            <button  className=" btn-ghost btn-lg">
+           <Link to={`/dashboard/updateItem/${item._id}`}>
+              <button  className=" btn-ghost btn-lg">
                 <p className="text-blue-500">Update</p>
               </button>
+            </Link>
             </th>
           </tr>)
     }

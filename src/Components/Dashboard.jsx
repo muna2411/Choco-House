@@ -183,9 +183,9 @@ const Dashboard = () => {
                             Home</NavLink>
                     </li>
                     <li  className="text-[20px] my-[10px] font-semibold">
-                        <NavLink to="/order/salad">
+                        <NavLink to="/order/Donut">
                             <FaSearch></FaSearch>
-                            Menu</NavLink>
+                            Items</NavLink>
                     </li>
                     <li  className="text-[20px] my-[10px] font-semibold">
                         <NavLink to="/order/contact">

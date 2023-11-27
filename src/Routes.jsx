@@ -17,6 +17,7 @@ import AllUserForManager from "./Components/AllUserForManager";
 import ListForm from "./Components/ListForm";
 import ManageProduct from "./Components/ManageProduct";
 import List from "./Components/List";
+import UpdateItem from "./Components/UpdateItem";
 
   
   export const router = createBrowserRouter([
@@ -77,6 +78,11 @@ import List from "./Components/List";
         {
           path:"listform",
           element:<ListForm></ListForm>
+        },
+        {
+          path:'updateItem/:id',
+          element:<UpdateItem></UpdateItem>,
+          loader: ({params}) => fetch(`http://localhost:5000/list/${params.id}`)
         },
         {
           path:"manageProduct",
