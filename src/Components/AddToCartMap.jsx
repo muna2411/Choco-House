@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const AddToCartMap = ({item}) => {
@@ -10,7 +11,7 @@ const AddToCartMap = ({item}) => {
     <h2 className="text-[30px] text-center text-white font-a">{name}</h2>
     {/* <p>{recipe}</p> */}
     <div className="card-actions justify-center my-[10px]">
-    <button className=" btn-outline border-[2px]  text-white w-[150px] h-[60px] text-[18px] hover:bg-[#411900]">Add to cart</button>
+   <Link to={`/order/Donut`}> <button className=" btn-outline border-[2px]  text-white w-[150px] h-[60px] text-[18px] hover:bg-[#411900]">See More</button></Link>
     </div>
   </div>
 </div>

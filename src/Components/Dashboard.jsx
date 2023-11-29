@@ -1,4 +1,4 @@
-import {  FaBook, FaCalendar, FaEnvelope, FaHome, FaList, FaSearch, FaShoppingCart, FaUsers, FaUtensils } from "react-icons/fa";
+import {  FaBook, FaCalendar, FaCreditCard, FaEnvelope, FaHome, FaList, FaPaypal, FaSalesforce, FaSearch, FaShoppingCart, FaTag, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import UseAdmin from "./UseAdmin";
 import UseManager from "./UseManager";
@@ -90,19 +90,14 @@ const Dashboard = () => {
                                     Admin Home</NavLink>
                             </li>
                             <li  className="text-[20px] my-[10px] font-semibold">
-                                <NavLink to="/dashboard/addItems">
-                                    <FaUtensils></FaUtensils>
-                                    Add Items</NavLink>
-                            </li>
-                            <li  className="text-[20px] my-[10px] font-semibold">
-                                <NavLink to="/dashboard/manageItems">
+                                <NavLink to="/dashboard/manageShop">
                                     <FaList></FaList>
-                                    Manage Items</NavLink>
+                                    Manage Shop</NavLink>
                             </li>
                             <li  className="text-[20px] my-[10px] font-semibold">
-                                <NavLink to="/dashboard/bookings">
+                                <NavLink to="/dashboard/saleSummary">
                                     <FaBook></FaBook>
-                                    Manage Bookings</NavLink>
+                                    Sale Summary</NavLink>
                             </li>
                             <li  className="text-[20px] my-[10px] font-semibold">
                                 <NavLink to="/dashboard/allUsers">
@@ -138,6 +133,16 @@ const Dashboard = () => {
             <NavLink to="/dashboard/allUserForManager">
                 <FaUsers></FaUsers>
                 All Users</NavLink>
+        </li>
+        <li  className="text-[20px] my-[10px] font-semibold">
+            <NavLink to="/dashboard/salesColection">
+               <FaTag></FaTag>
+                Sales Collection</NavLink>
+        </li>
+        <li  className="text-[20px] my-[10px] font-semibold">
+            <NavLink to="/dashboard/payment">
+               <FaCreditCard></FaCreditCard>
+                Payment</NavLink>
         </li>
     </>
     )
@@ -188,7 +193,7 @@ const Dashboard = () => {
                             Items</NavLink>
                     </li>
                     <li  className="text-[20px] my-[10px] font-semibold">
-                        <NavLink to="/order/contact">
+                        <NavLink to="/contact">
                             <FaEnvelope></FaEnvelope>
                             Contact</NavLink>
                     </li>

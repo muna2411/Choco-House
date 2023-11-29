@@ -56,7 +56,7 @@ const UpdateItem = () => {
 
         <div className='flex justify-between items-center'>
             {/* <div><img className='w-[500px] h-[750px]'  src='r15.jpg'></img></div> */}
-   <div className="hero lg:w-[1300px] sm:w-[630px] h-[950px] mx-auto" style={{backgroundImage: 'url(https://i.ibb.co/KwHynh5/Beige-Floral-Minimalist-Linktree-Background-1.png)'}}>
+   <div className="hero lg:w-[1300px] sm:w-[630px] h-[800px] mx-auto" style={{backgroundImage: 'url(https://i.ibb.co/YRBkFth/Chocolate-Simple-Flower-Phone-Wallpaper.png)'}}>
   {/* <div className="hero-overlay bg-opacity-30 "></div> */}
   <div >
     <div >

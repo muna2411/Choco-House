@@ -23,6 +23,7 @@ const handleLogOut = () => {
      <li><Link to='/order/Donut' >Items</Link></li>
      <li><Link to='/createShop'>Create Shop</Link></li>
      <li><Link to='/watchDemo'>Watch Demo</Link></li>
+     <li><Link to='/contact'>Contact</Link></li>
      
      {
       user ? <><li><Link to='/dashboard'>Dashboard</Link></li></>  

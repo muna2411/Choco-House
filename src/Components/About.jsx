@@ -1,9 +1,16 @@
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const About = () => {
+   
+        useEffect(() =>{
+          Aos.init();
+      },[])
+
     return (
         <div>
-            <div className="hero">
+            <div className="hero" data-aos="fade-up">
             <img className="h-[600px] w-[1000px] mb-[100px] mx-auto" src="r17.jpg"></img>
             <div className="hero-content text-center text-neutral-content">
     <div className="mt-[-320px]">

@@ -8,8 +8,9 @@ const WatchDemo = () => {
                 <title>Choco House | WatchDemo</title>
             </Helmet>
             <div>
-                <img className="w-[500px] h-[1000px]" src="https://i.ibb.co/jzHY8KX/Brown-and-Black-Modern-Opening-Hour-Instagram-Story.png"></img>
+                <img className="w-[450px] h-[1000px]" src="https://i.ibb.co/jzHY8KX/Brown-and-Black-Modern-Opening-Hour-Instagram-Story.png"></img>
             </div>
+           
              <div>
                <iframe
                className="mx-auto my-[50px]"

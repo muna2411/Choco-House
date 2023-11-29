@@ -18,6 +18,12 @@ import ListForm from "./Components/ListForm";
 import ManageProduct from "./Components/ManageProduct";
 import List from "./Components/List";
 import UpdateItem from "./Components/UpdateItem";
+import SalesColection from "./Components/SalesColection";
+import ManageShop from "./Components/ManageShop";
+import SaleSummary from "./Components/SaleSummary";
+import CheckOut from "./Components/CheckOut";
+import Payment from "./Components/Payment";
+import Contact from "./Components/Contact";
 
   
   export const router = createBrowserRouter([
@@ -52,6 +58,10 @@ import UpdateItem from "./Components/UpdateItem";
         {
           path:'/list',
           element:<List></List>
+        },
+        {
+          path:'/contact',
+          element:<Contact></Contact>
         }
       ]
     },
@@ -87,6 +97,26 @@ import UpdateItem from "./Components/UpdateItem";
         {
           path:"manageProduct",
           element:<ManageProduct></ManageProduct>
+        },
+        {
+          path:"salesColection",
+          element:<SalesColection></SalesColection>
+        },
+        {
+          path:"manageShop",
+          element:<ManageShop></ManageShop>
+        },
+        {
+          path:"saleSummary",
+          element:<SaleSummary></SaleSummary>
+        },
+        {
+          path:"checkOut",
+          element:<CheckOut></CheckOut>
+        },
+        {
+          path:'payment',
+          element:<Payment></Payment>
         }
       ]
     }

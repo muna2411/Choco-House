@@ -2,8 +2,8 @@
 
 const Gridd = () => {
     return (
-        <div className="flex justify-between items-center  mx-[50px]">
-            <div className="grid grid-cols-2 gap-3">
+        <div className="flex justify-between items-center  lg:mx-[50px] sm:mx-[0px]">
+            <div className="grid grid-cols-2 lg:gap-3 sm:gap-0">
             <img className="w-[400px] h-[300px]" src="https://i.ibb.co/d229pTW/pexels-paloma-clarice-9285199.jpg"></img>
             <img className="w-[400px] h-[300px]" src="https://i.ibb.co/Thxw8sY/pexels-efnan-y-lmaz-17498805.jpg"></img>
             <img className="w-[400px] h-[300px]" src="https://i.ibb.co/HDFfQdJ/pexels-alina-matveycheva-18902646.jpg"></img>

@@ -53,7 +53,7 @@ const ManageProduct = () => {
   <table className="table ">
 
     <thead >
-      <tr className=" font-a text-[20px] ">
+      <tr className=" font-a text-[20px] text-orange-500">
         <th>
          No.
         </th>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
-        <div className="text-center">
+        <div className="text-center lg:mt-[0px] sm:mt-[150px]">
                 <Swiper
      spaceBetween={30}
      centeredSlides={true}
@@ -23,8 +23,8 @@ const Banner = () => {
      className="mySwiper"
     >
             <SwiperSlide>
-                 <div className="h-[700px] " >
-                    <img  src="r18.jpg" />
+            <div className="lg:h-[850px] sm:h-[750px] ">
+                    <img className="lg:h-[850px] sm:h-[750px] lg:w-full"  src="r18.jpg" />
                     <div className="absolute left-[500px] top-[300px] transform -translate-x-1/2 -translate-y-1/2 text-left ">
                          <p className="text-white text-[50px] font-b">Choco House</p>
                          <p className="text-[#CD7F32] text-[70px] uppercase font-a">Cake & Roll</p>
@@ -35,8 +35,8 @@ const Banner = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>  
-                <div className="h-[750px]  ">
-                    <img src="r11.jpg" />
+                <div className="lg:h-[850px] sm:h-[750px] ">
+                    <img className="lg:h-[850px] sm:h-[750px] lg:w-full" src="r11.jpg" />
                     <div className="absolute left-[500px] top-[300px] transform -translate-x-1/2 -translate-y-1/2 text-left ">
                          <p className="text-white text-[50px] font-b">Choco House</p>
                          <p className="text-[#CD7F32] text-[70px] uppercase font-a">Treat Cake</p>
@@ -46,8 +46,8 @@ const Banner = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="h-[750px]  " >
-                    <img src="r10.jpg" />
+                <div className="lg:h-[850px] sm:h-[750px] ">
+                    <img className="lg:h-[850px] sm:h-[750px] lg:w-full" src="r10.jpg" />
                     <div className="absolute left-[500px] top-[300px] transform -translate-x-1/2 -translate-y-1/2 text-left ">
                          <p className="text-white text-[50px] font-b">Choco House</p>
                          <p className="text-[#CD7F32] text-[70px] uppercase font-a">The Finest</p>
@@ -57,8 +57,8 @@ const Banner = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="h-[750px]  " >
-                   <img src="r12.jpg" /> 
+                <div className="lg:h-[850px] sm:h-[750px] ">
+                   <img className="lg:h-[850px] sm:h-[750px] lg:w-full" src="r12.jpg" /> 
                         <div className="absolute left-[500px] top-[300px] transform -translate-x-1/2 -translate-y-1/2 text-left ">
                          <p className="text-white text-[50px] font-b">Choco House</p>
                          <p className="text-[#CD7F32] text-[70px] uppercase font-a">Cake My Day</p>
@@ -68,8 +68,8 @@ const Banner = () => {
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="h-[750px]  ">
-                    <img src="r19.jpg" />
+                <div className="lg:h-[850px] sm:h-[750px] ">
+                    <img className="lg:h-[850px] sm:h-[750px] lg:w-full" src="r19.jpg" />
                     <div className="absolute left-[500px] top-[300px] transform -translate-x-1/2 -translate-y-1/2 text-left ">
                          <p className="text-white text-[50px] font-b">Choco House</p>
                          <p className="text-[#CD7F32] text-[70px] uppercase font-a">Chocolate</p>

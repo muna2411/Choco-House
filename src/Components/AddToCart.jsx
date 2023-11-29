@@ -1,6 +1,7 @@
 
 import AddToCartMap from "./AddToCartMap";
 import UseMenu from "./UseMenu";
+import UseOffer from "./UseOffer";
 
 
 const AddToCart = () => {
@@ -13,17 +14,17 @@ const AddToCart = () => {
     //         setCart(popularMenu)
     //     })
     // },[])
-    const [menu] = UseMenu();
-    const popular =menu.filter(item => item.category === 'popular');
+    const [offer] = UseOffer();
+    const popular =offer.filter(item => item.category === 'popular');
     return (
         <div>
              <div className=' items-center justify-around flex mt-[200px]'>
-                <p className='text-center text-[40px] mt-[50px] border-b-4 border-[#411900] font-b text-[#411900]'>OUR SELECTIONS</p>
+                <p className='text-center text-[40px] mt-[50px] border-b-4 border-[#411900] font-b text-[#411900]' data-aos="fade-down">OUR SELECTIONS</p>
             </div>
             {/* <div>
             <img className="h-[1000px] w-full mt-[100px]" src="r17.jpg"></img>
             </div> */}
-            <div className="grid grid-cols-4 mt-[100px] mb-[200px]">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-1 mt-[100px] mb-[200px]" >
             {
                 popular.map(item => <AddToCartMap key={item._id} item={item}></AddToCartMap>)
             }

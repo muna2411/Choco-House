@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
 <div className=" items-center mt-[100px]">
         <div >
-           <footer className="footer p-10 bg-[#CD7F32] text-neutral-content  h-[300px]">
+           <footer className="footer p-10 bg-[#CD7F32] text-neutral-content  lg:h-[300px] sm:h-[850px]">
              <aside>
              <img className="h-[100px]" src="https://i.ibb.co/52x7MwJ/r13.png"></img>
                <p className="text-[22px]"><span className="font-a text-[#411900]">Choco House</span> Industries Ltd.</p>
@@ -20,7 +20,8 @@ const Footer = () => {
                 </div>
               </nav>
             
-  <nav>
+
+ <nav >
     <header className="footer-title">Services</header> 
     <a className="link link-hover">Branding</a>
     <a className="link link-hover">Design</a>
@@ -40,6 +41,8 @@ const Footer = () => {
     <a className="link link-hover">Privacy policy</a>
     <a className="link link-hover">Cookie policy</a>
   </nav>
+
+  
 
               
            </footer>

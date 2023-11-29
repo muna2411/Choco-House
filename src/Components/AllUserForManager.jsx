@@ -62,18 +62,19 @@ const AllUserForManager = () => {
 
     return (
         <div className="mx-[50px]">
-             <p className="text-center text-[40px] my-[80px] divider font-b">Manage All Users</p>
+             <p className="text-center text-[40px] my-[80px] divider font-b"> All Users List </p>
            <div>
-            <p className="uppercase font-a text-[30px]">Total Users : {users.length}</p>
+            <p className="uppercase font-a text-[25px] text-center">Total Users : <span className="text-orange-500">{users.length}</span></p>
+            {/* <div className="divider bg-[#411900] h-[2px] w-[200px] justify-center items-center"></div> */}
            </div>
 
-           <div className="overflow-x-auto ">
+           <div className="overflow-x-auto mt-[60px]">
   <table className="table">
 
     <thead>
-      <tr>
+      <tr  className="font-a text-[20px] text-orange-500">
         <th>
-         #
+         No.
         </th>
         <th>Name</th>
         <th>Email</th>
@@ -96,8 +97,8 @@ const AllUserForManager = () => {
         </td>
         <th>
             {
-                user.role === 'manager' ? 'Manager' : <button onClick={() => handleMakeManager(user)} className="btn btn-ghost btn-lg bg-orange-400">
-                <FaUser className="text-white " ></FaUser>
+                user.role === 'manager' ? 'Manager' : <button onClick={() => handleMakeManager(user)} className="btn btn-ghost btn-lg ">
+                <FaUser className="text-black " ></FaUser>
                 </button>
             }
         </th>
