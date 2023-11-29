@@ -160,21 +160,16 @@ const Dashboard = () => {
                                 </li>
                                 
                                 <li  className="text-[20px] my-[10px] font-semibold">
-                                    <NavLink to="/dashboard/cart">
+                                    <NavLink to="/dashboard/myShop">
                                         <FaShoppingCart></FaShoppingCart>
-                                        My Cart </NavLink>
+                                        My Shop List</NavLink>
                                 </li>
                                 <li  className="text-[20px] my-[10px] font-semibold">
-                                    <NavLink to="/dashboard/addProductList">
+                                    <NavLink to="/dashboard/addShop">
                                         <FaShoppingCart></FaShoppingCart>
-                                        Add Product List </NavLink>
+                                        Add Shop</NavLink>
                                 </li>
-                                <li  className="text-[20px] my-[10px] font-semibold">
-                                    <NavLink to="/dashboard/payment">
-                                        <FaCalendar></FaCalendar>
-                                        Payment</NavLink>
-                                </li>
-                             
+                                
                             </>
     )
 }

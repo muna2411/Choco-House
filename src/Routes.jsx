@@ -24,6 +24,7 @@ import SaleSummary from "./Components/SaleSummary";
 import CheckOut from "./Components/CheckOut";
 import Payment from "./Components/Payment";
 import Contact from "./Components/Contact";
+import DoPayment from "./Components/DoPayment";
 
   
   export const router = createBrowserRouter([
@@ -117,6 +118,10 @@ import Contact from "./Components/Contact";
         {
           path:'payment',
           element:<Payment></Payment>
+        },
+        {
+          path:"doPayment",
+          element:<DoPayment></DoPayment>
         }
       ]
     }

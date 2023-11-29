@@ -19,6 +19,8 @@ const Contact = () => {
                            </div>
                            <p className="flex justify-center items-center text-[25px]"><FaFacebook></FaFacebook> Choco House Bakery</p>
                         </div>
+
+                        
                         <div className="vertical-divider" style={{ borderLeft: '2px solid #411900', height: '600px' }}></div>
 
                        
