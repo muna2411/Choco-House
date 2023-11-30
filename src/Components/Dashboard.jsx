@@ -164,12 +164,7 @@ const Dashboard = () => {
                                         <FaShoppingCart></FaShoppingCart>
                                         My Shop List</NavLink>
                                 </li>
-                                <li  className="text-[20px] my-[10px] font-semibold">
-                                    <NavLink to="/dashboard/addShop">
-                                        <FaShoppingCart></FaShoppingCart>
-                                        Add Shop</NavLink>
-                                </li>
-                                
+
                             </>
     )
 }

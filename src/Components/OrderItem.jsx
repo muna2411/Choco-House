@@ -1,17 +1,10 @@
-import { useContext } from 'react';
-import { AuthContext } from './AuthProvider';
-import Swal from 'sweetalert2';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import UseAxiosSecure from './UseAxiosSecure';
-import UseCart from './UseCart';
+
+import { Link} from 'react-router-dom';
+
 
 const OrderItem = ({item}) => {
     const {name,image,price,recipe , _id} =item;
-    const {user}= useContext(AuthContext);
-    const navigate = useNavigate();
-    const location = useLocation();
-    const axiosSecure = UseAxiosSecure();
-    const [,refetch] = UseCart();
+ 
     
     // const handleAddToCart = food => {
     //   //console.log(food , user.email)

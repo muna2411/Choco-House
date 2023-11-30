@@ -8,7 +8,7 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 import PrivateRoute from "./Components/PrivateRoute";
 import Dashboard from "./Components/Dashboard";
-import Cart from "./Components/Cart";
+
 import AllUser from "./Components/AllUser";
 import CreateShop from "./Components/CreateShop";
 import WatchDemo from "./Components/WatchDemo";
@@ -25,12 +25,18 @@ import CheckOut from "./Components/CheckOut";
 import Payment from "./Components/Payment";
 import Contact from "./Components/Contact";
 import DoPayment from "./Components/DoPayment";
+import AdminHome from "./Components/AdminHome";
+
+import MyShop from "./Components/MyShop";
+import UserHome from "./Components/UserHome";
+import ErrorPage from "./Components/ErrorPage";
 
   
   export const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children:[
         {
             path:'/',
@@ -70,10 +76,7 @@ import DoPayment from "./Components/DoPayment";
       path: "/dashboard",
       element: <Dashboard></Dashboard>,
       children:[
-        {
-          path: "cart",
-          element: <Cart></Cart>
-        },
+       
         {
         path:'managerHome',
         element:<ManagerHome></ManagerHome>
@@ -122,7 +125,20 @@ import DoPayment from "./Components/DoPayment";
         {
           path:"doPayment",
           element:<DoPayment></DoPayment>
-        }
+        },
+        {
+          path:"adminHome",
+          element:<AdminHome></AdminHome>
+        },
+        {
+          path:"userHome",
+          element:<UserHome></UserHome>
+        },
+        {
+          path:"myShop",
+          element:<MyShop></MyShop>
+        },
+        
       ]
     }
   ]);

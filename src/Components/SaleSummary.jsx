@@ -13,7 +13,7 @@ const [list] = UseList();
             <div className='w-[300px] m-[20px] shadow-lg bg-white'>
               <figure><img className='h-[400px] w-[300px]'  src='https://i.ibb.co/Czp4Sd4/b.jpg'/></figure>
                 <div className=" text-black mx-[20px] my-[20px] bg-white">      
-                  <h2 className="card-title font-a text-center mb-[20px] "><span className='text-orange-500 mb-[20px]'>Total Income : </span> <span className="mb-[20px]">{list.length}</span>  </h2>
+                  <h2 className="card-title font-a text-center mb-[20px] "><span className='text-orange-500 mb-[20px]'>Total Income : </span> <span className="mb-[20px]"></span>  </h2>
                  
                 </div>
             </div>
@@ -33,7 +33,7 @@ const [list] = UseList();
             <div className='w-[300px] m-[20px] shadow-lg bg-white'>
               <figure><img className='h-[400px] w-[300px]'  src='https://i.ibb.co/19qSMZR/bbb.jpg'/></figure>
                 <div className=" text-black mx-[20px] my-[20px]">     
-                  <h2 className="card-title font-a text-center mb-[20px]"><span className='text-orange-500 mb-[20px]'>Total Sales : </span> <span className="mb-[20px]">{list.length}</span>  </h2>
+                  <h2 className="card-title font-a text-center mb-[20px]"><span className='text-orange-500 mb-[20px]'>Total Sales : </span> <span className="mb-[20px]"></span>  </h2>
                   
                 </div>
             </div>

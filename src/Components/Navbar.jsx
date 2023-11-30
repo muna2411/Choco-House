@@ -2,13 +2,13 @@ import { useContext } from "react";
 import Headroom from "react-headroom";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
-import UseCart from "./UseCart";
+
 
 //import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Navbar = () => {
   const {user , logOut } = useContext(AuthContext);
-  const [cart] = UseCart();
+  
 
 
 const handleLogOut = () => {
@@ -64,28 +64,7 @@ const handleLogOut = () => {
 
   <div className="navbar-end flex ">
     <div className="flex">
-     <div className="dropdown dropdown-end">
-      <Link to='/dashboard'>
-      <button tabIndex={0} className="btn btn-ghost btn-circle">
-        <div className="indicator">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-          <span className="badge badge-sm indicator-item">{cart.length}</span>
-        </div>
-      </button>
-      </Link>
 
-
-
-     
-     {/* {
-       googleSignIn && <div className="flex justify-center items-center mx-[10px] ml-[200px] ">
-       <div> <img className="w-[60px] h-[60px] mx-[10px]"style={{ borderRadius: "50%"}} src={googleSignIn.photoURL}></img> </div>
-       <div> <p className="text-[18px] text-black">{googleSignIn.displayName}</p></div>
-     </div>
-     } */}
-
-
-    </div>
     {
       user && <div className="flex justify-center items-center mx-[10px]  ">
             <div> <img className="w-[60px] h-[60px] mx-[10px]"style={{ borderRadius: "50%"}} src={user.photoURL}></img> </div>

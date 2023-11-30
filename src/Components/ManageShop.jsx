@@ -75,7 +75,7 @@ const ManageShop = () => {
             </td>
 
             <td className="text-[18px]">
-                {item.limit} 
+               3 
             </td>
 
             

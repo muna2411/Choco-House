@@ -1,6 +1,6 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useState } from "react";
-import {  useParams} from "react-router-dom";
+import UsePayment from "./UsePayment";
 
 
 
@@ -10,7 +10,7 @@ const DoCheckOut = () => {
     const elements = useElements();
     // const location = useLocation();
     // const { amount } = location.state ;
-    const { amount } = useParams();
+    const [pay] = UsePayment();
 
     const handleSubmit = async (event) =>{
         event.preventDefault();
@@ -62,7 +62,7 @@ const DoCheckOut = () => {
         <button className="btn btn-sm btn-primary my-4" type="submit" disabled={!stripe}>
             Pay
         </button>
-        <p>Amount: {amount}</p>
+        <p>Amount: {pay.price}</p>
         <p className="text-red-600">{error}</p>
     </form>
     );
