@@ -96,7 +96,7 @@ import ErrorPage from "./Components/ErrorPage";
         {
           path:'updateItem/:id',
           element:<UpdateItem></UpdateItem>,
-          loader: ({params}) => fetch(`http://localhost:5000/list/${params.id}`)
+          loader: ({params}) => fetch(`https://returant-server.vercel.app/list/${params.id}`)
         },
         {
           path:"manageProduct",

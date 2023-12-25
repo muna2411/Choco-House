@@ -27,7 +27,7 @@ const UpdateItem = () => {
         console.log(updated);
 
   
-        fetch(`http://localhost:5000/list/${_id}`, {
+        fetch(`https://returant-server.vercel.app/list/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

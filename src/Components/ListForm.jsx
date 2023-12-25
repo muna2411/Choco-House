@@ -39,7 +39,7 @@ const ListForm = () => {
 
       console.log(users);
     
-      fetch('http://localhost:5000/list',{
+      fetch('https://returant-server.vercel.app/list',{
         method: 'POST',
         headers:{
           'content-type' : 'application/json'

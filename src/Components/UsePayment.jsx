@@ -5,7 +5,7 @@ const UsePayment = () => {
     const [payment,setPayment] =useState([]);
     const [loading , setLoading] = useState(true);
     useEffect(() =>{
-        fetch('http://localhost:5000/payment')
+        fetch('https://returant-server.vercel.app/payment')
         .then(res => res.json())
         .then(data =>{
             setPayment(data)

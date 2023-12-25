@@ -6,6 +6,7 @@ import Cardswiper from "./Cardswiper";
 import Testimonial from "./Testimonial";
 import Gridd from "./Gridd";
 import About from "./About";
+import Xman from "./Xman";
 
 
 
@@ -25,6 +26,7 @@ const Home = () => {
            <About></About>
            <Testimonial></Testimonial>
            <Gridd></Gridd>
+           {/* <Xman></Xman> */}
         </div>
     );
 };

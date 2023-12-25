@@ -4,7 +4,7 @@ const UseOffer = () => {
     const [offer,setOffer] =useState([]);
     const [loading , setLoading] = useState(true);
     useEffect(() =>{
-        fetch('http://localhost:5000/offer')
+        fetch('https://returant-server.vercel.app/offer')
         .then(res => res.json())
         .then(data =>{
             setOffer(data)

@@ -1,4 +1,4 @@
-import {  FaBook, FaCalendar, FaCreditCard, FaEnvelope, FaHome, FaList, FaPaypal, FaSalesforce, FaSearch, FaShoppingCart, FaTag, FaUsers, FaUtensils } from "react-icons/fa";
+import {  FaBook, FaCreditCard, FaEnvelope, FaHome, FaList, FaSearch, FaShoppingCart, FaTag, FaUsers, FaUtensils } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 import UseAdmin from "./UseAdmin";
 import UseManager from "./UseManager";
@@ -12,7 +12,7 @@ const Dashboard = () => {
     // TODO: get isAdmin value from the database
     const [isAdmin] =UseAdmin();
     const [isManager] = UseManager();
-
+    //const isManager = true ;
     return (
         <div className="flex">
              <Helmet>
@@ -21,64 +21,7 @@ const Dashboard = () => {
             {/* dashboard side bar */}
             <div className="w-[300px] min-h-screen  text-[#411900] " style={{backgroundImage: 'url(https://i.ibb.co/gFFcGJh/Brown-Vintage-Aesthetic-Scrapbook-Background-Instagram-Story.png)'}}>
                 <ul className=" menu p-4">
-                    {/* {
-                        isAdmin ? <>
-                            <li  className="text-[16px] my-[10px]">
-                                <NavLink to="/dashboard/adminHome">
-                                    <FaHome></FaHome>
-                                    Admin Home</NavLink>
-                            </li>
-                            <li  className="text-[16px] my-[10px]">
-                                <NavLink to="/dashboard/addItems">
-                                    <FaUtensils></FaUtensils>
-                                    Add Items</NavLink>
-                            </li>
-                            <li  className="text-[16px] my-[10px]">
-                                <NavLink to="/dashboard/manageItems">
-                                    <FaList></FaList>
-                                    Manage Items</NavLink>
-                            </li>
-                            <li  className="text-[16px] my-[10px]">
-                                <NavLink to="/dashboard/bookings">
-                                    <FaBook></FaBook>
-                                    Manage Bookings</NavLink>
-                            </li>
-                            <li  className="text-[16px] my-[10px]">
-                                <NavLink to="/dashboard/allUsers">
-                                    <FaUsers></FaUsers>
-                                    All Users</NavLink>
-                            </li>
-                        </>
-                            :
-                            <>
-                                <li  className="text-[16px] my-[10px]">
-                                    <NavLink to="/dashboard/userHome">
-                                        <FaHome></FaHome>
-                                        User Home</NavLink>
-                                </li>
-                                <li  className="text-[16px] my-[10px]">
-                                    <NavLink to="/dashboard/reservation">
-                                        <FaCalendar></FaCalendar>
-                                        Reservation</NavLink>
-                                </li>
-                                <li  className="text-[16px] my-[10px]">
-                                    <NavLink to="/dashboard/cart">
-                                        <FaShoppingCart></FaShoppingCart>
-                                        My Cart </NavLink>
-                                </li>
-                                <li  className="text-[16px] my-[10px]">
-                                    <NavLink to="/dashboard/review">
-                                        <FaAd></FaAd>
-                                        Add a Review</NavLink>
-                                </li>
-                                <li  className="text-[16px] my-[10px]">
-                                    <NavLink to="/dashboard/bookings">
-                                        <FaList></FaList>
-                                        My Bookings</NavLink>
-                                </li>
-                            </>
-                    } */}
-
+                   
 
 {
     isAdmin && (
@@ -167,7 +110,7 @@ const Dashboard = () => {
 
                             </>
     )
-}
+ }
 
                    
                     <div className="divider bg-[#DAA06D] h-[2px]"></div>
@@ -198,6 +141,6 @@ const Dashboard = () => {
         </div>
     
     );
-};
+ };
 
 export default Dashboard;

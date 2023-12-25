@@ -22,7 +22,7 @@ const CreateShop = () => {
       const users = {name,ownerName,ownerEmail,location,description,image,category,price};
       console.log(user);
     
-      fetch('http://localhost:5000/menu',{
+      fetch('https://returant-server.vercel.app/menu',{
         method: 'POST',
         headers:{
           'content-type' : 'application/json'
