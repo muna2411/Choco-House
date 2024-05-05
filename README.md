@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# https://chocolate-64741.web.app/
-=======
 # https://chocolate-64741.web.app/
 
 1. useEffect : it is a hook that allows you to perform side effects in your functional components. Side effects can include data fetching, subscriptions, manually changing the DOM, and more.
@@ -9,4 +6,3 @@
 
 
 
->>>>>>> cecd59e496acf28ff843d94806fa5a5f74435771
