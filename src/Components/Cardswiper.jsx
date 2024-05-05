@@ -82,7 +82,7 @@ data-aos="fade-left"
           playsInline
           loop
           muted
-          controls
+          // controls
           alt="All the devices"
           
           src="/v2.mp4"

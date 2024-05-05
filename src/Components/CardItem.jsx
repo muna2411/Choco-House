@@ -1,9 +1,10 @@
 
+import './Yes.css';
 
 const CardItem = ({item}) => {
     const {name,image,price,recipe} =item;
     return (
-        <div className="mx-auto mt-[100px]">
+        <div className="mx-auto mt-[100px]  zoom">
             <img className="w-[280px] h-[400px]" style={{borderRadius:'0 200px 0px 200px'}} src={image}></img>
             <div className="text-center">
               <h2 className="uppercase text-[25px]">{name}</h2>
